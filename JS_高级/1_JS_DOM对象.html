@@ -10,12 +10,17 @@
             img.src="img/"+temp+".jpg"
 
         }
+        var who=function (){
+            var h1=document.getElementById("h1");
+            h1.innerText="我是马云！";
+        }
 
 
     </script>
 </head>
 <body>
 <img src="img/1.jpg" id="img1" style="width: 500px;height: 300px;">
+<h1 id="h1" onclick="who()">你是谁</h1>
 <button  onclick="trans();">切换图片</button>
 </body>
 </html>
