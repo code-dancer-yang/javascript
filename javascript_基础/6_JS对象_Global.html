@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Global</title>
+</head>
+<script type="text/javascript">
+    /**
+     * 特点：
+     *    全局对象，这个Global对象中封装的方法不需要对象就可以直接调用
+     *   例子：%E4%BC%A0%E6%99%BA%E6%92%AD%E5%AE%A2  传智播客
+                 encodeURI();//url编码
+                 decodeURI();//url解码
+
+                 encodeURIComponent()//url编码
+                 decodeURIComponent()//url解码
+        区别：后者可以编码的字符更多
+
+         parseInt()：将字符串转为数字，逐一判断每一个字符是否时数字，直到不是数字为止，将前面的数字部分转为number
+         isNaN() 判断一个值是否是NaN 特点:NaN不能参与==比较  返回值全部为false
+
+         eval() 计算JavaScript字符串，并把他作为脚本代码来执行
+     */
+    var str="http://www.baidu.com?wd=传智播客";
+    var wd=encodeURI(str);//编码
+    document.write(wd+"<br>");
+    var decode=decodeURI(wd);
+    document.write(decode+"<br>");
+    var str1="http://www.baidu.com?wd=传智播客";
+    var encode1=encodeURIComponent(str1);
+    document.write(encode1+"<br>")
+    var decode1=decodeURIComponent(encode1);
+    document.write(decode1+"<br>");
+    var str3="12ee3dasf2331";
+    document.write(parseInt(str3)+"<br>")
+    var a="abc";
+    document.write((NaN==NaN)+"<br>");
+    document.write(isNaN(parseInt(a)));
+
+    var jscode="alert('123');"
+    function  sayHello(){
+        alert("测试eval函数")
+    }
+    eval("sayHello()");
+    // eval(jscode);
+</script>
+<body>
+
+</body>
+</html>

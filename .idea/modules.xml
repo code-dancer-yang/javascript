@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JS_高级/JS_高级.iml" filepath="$PROJECT_DIR$/JS_高级/JS_高级.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day01_javascript基础/day01_javascript基础.iml" filepath="$PROJECT_DIR$/day01_javascript基础/day01_javascript基础.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javascript_基础/javascript_基础.iml" filepath="$PROJECT_DIR$/javascript_基础/javascript_基础.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javascript_高级.iml" filepath="$PROJECT_DIR$/javascript_高级.iml" />
+    </modules>
+  </component>
+</project>

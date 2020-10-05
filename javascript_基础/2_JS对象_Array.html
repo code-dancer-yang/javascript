@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array</title>
+</head>
+<script type="text/javascript">
+    /**
+     * Array数组对象
+     * 1.创建
+     *           //创建数组1
+     var arr=new Array(5);//当参数为1个的时候创建一个指定长度的空的数组
+     //创建数组2
+     var arr2=['a','b','v'];//创建带元素列表的数组
+     //创建数组3
+     var arr3=new Array("hahha",3,"t");//创建带指定元素列表的数组
+     * 2.方法
+     *   join(参数)将数组中的元素按指定的分隔符拼接成字符串，默认无参时用“,”分割
+     *   push(参数)向数组末尾追加元素
+     * 3.属性
+     *   length 数组的长度
+     * 4.特点
+     * js中数组的元素类型是可变的
+     * js中数组的长度是可变的
+     */
+
+        //创建数组1
+    var arr=new Array(5);//当参数为1个的时候创建一个指定长度的空的数组
+    //创建数组2
+    var arr2=['a','b','v'];//创建带元素列表的数组
+    //创建数组3
+    var arr3=new Array("hahha",3,"t");//创建带指定元素列表的数组
+    //创建数组4
+    var arr4=new Array();//创建一个空数组且未指定长度
+    // document.writeln(arr+"<br>");
+    // document.writeln(arr2+"<br>");
+    // document.writeln(arr3+"<br>");
+    // document.writeln(arr4+"<br>");
+    //取指定索引元素
+    document.write(arr3[0]+"<br>")
+    document.write(arr3[1]+"<br>")
+    document.write(arr3[3]+"<br>")//undefined
+    document.write("索引到3时数组长度："+arr3.length+"<br>");
+    arr3[4]="我的索引是4";
+    document.write(arr3[4]+"<br>")
+    document.write("索引到4时数组长度："+arr3.length);//数组长度可变
+    // alert(arr3.join())
+    arr3.push("我是新来的");//向数组最后追加元素
+    alert(arr3.join("--"));
+</script>
+
+
+
+<body>
+
+</body>
+</html>

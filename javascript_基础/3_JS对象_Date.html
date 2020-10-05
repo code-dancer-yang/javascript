@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Date</title>
+</head>
+<script type="text/javascript">
+    /**
+     * Date:日期对象
+     * 1.创建
+
+     * 2.方法
+     document.write(date.toLocaleString()+"<br>");//返回当前date对象对应的时间本地字符串表示格式，和操作系统有关
+     document.write(date.getTime()/(1000*60*60*24)+"<br>");//获取毫秒值，返回当前日期对象描述的时间到1970年1月1日零食零分零秒零毫秒的毫秒值差
+
+     */
+        //创建日期对象
+    var date=new Date();
+    document.write(date+"<br>");
+    document.write(date.toLocaleString()+"<br>");//返回当前date对象对应的时间本地字符串表示格式，和操作系统有关
+    document.write(date.getTime()/(1000*60*60*24)+"<br>");//获取毫秒值，返回当前日期对象描述的时间到1970年1月1日零食零分零秒零毫秒的毫秒值差
+</script>
+<body>
+
+
+</body>
+</html>

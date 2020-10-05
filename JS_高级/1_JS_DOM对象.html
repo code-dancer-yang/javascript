@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+    <script type="text/javascript">
+        var trans=function (){
+            var img=document.getElementById("img1");
+            var temp=Math.ceil(Math.random()*4+1);
+            img.src="img/"+temp+".jpg"
+
+        }
+
+
+    </script>
+</head>
+<body>
+<img src="img/1.jpg" id="img1" style="width: 500px;height: 300px;">
+<button  onclick="trans();">切换图片</button>
+</body>
+</html>

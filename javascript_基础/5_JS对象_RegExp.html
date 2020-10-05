@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>正则表达式</title>
+</head>
+<script type="text/javascript">
+    /**
+     * 正则表达式对象
+     * 1.创建
+     *    var reg=new RegExp("正则表达式");
+     *    var reg=/正则表达式/;
+        2.方法
+          test()//验证给定字符串时候符合正则
+     *    */
+
+
+    //创建正则表达式
+    var reg=new RegExp("^\\w{6,12}$");
+    var reg2=/^\w{6,12}$/;
+    var phoneTest=/^1[3456789]\d{9}$/;
+    var phoneTest2=new RegExp("^1[3456789]\\d{9}$");
+    // alert(reg);
+    // alert(reg2);
+    var username="zhangsanfdgsdfgfdg";
+    var flag=reg2.test(username);
+    // alert(flag);
+
+    function check(){
+        debugger;
+        var phone=document.getElementById("phone").value;
+        if(phoneTest.test(phone)){
+            alert("合法!")
+        }else {
+            alert("手机号码不合法");
+            document.getElementById("phone").value="";
+        }
+    }
+
+    var check2=function (){
+        debugger;
+        var phone=document.getElementById("phone").value;
+        if(phoneTest2.test(phone)){
+            alert("合法!")
+        }else {
+            alert("手机号码不合法");
+            document.getElementById("phone").value="";
+        }
+    }
+    var jump=function (arg1){
+        alert("我要跳转到百度首页啦！")
+        return false;//在此处返回false 不能阻止a标签 href的执行
+        //必须在onclick中设置 return false才能生效
+    }
+</script>
+
+<body>
+<input type="number" id="phone" name="phone"><br>
+<input type="button" id="check" onclick="check2('333');" value="验证手机号码"><br>
+<a href="javascript:void(0)" onclick="check();">点击我验证手机号是否合法</a><br>
+<a href="http://www.baidu.com" target="_top" title="haha" style="cursor:pointer" onclick="jump();return false">点击我跳转到百度</a>
+
+
+</body>
+</html>
