@@ -7,19 +7,20 @@
         var trans=function (){
             var img=document.getElementById("img1");
             var temp=Math.ceil(Math.random()*4+1);
-            img.src="img/"+temp+".jpg"
+            img.src="img/"+temp+".jpg";
 
         }
         var who=function (){
             var h1=document.getElementById("h1");
-            h1.innerText="我是马云！";
+            h1.innerText="<font color='red'>我是马云！</font>";
+            // h1.innerHTML="<font color='red'>我是马云！</font>";
         }
 
 
     </script>
 </head>
 <body>
-<img src="img/1.jpg" id="img1" style="width: 500px;height: 300px;">
+<img src="img/1.jpg" title="hhaah"  onclick="trans();" id="img1" style="cursor:pointer;width: 500px;height: 300px;">
 <h1 id="h1" onclick="who()">你是谁</h1>
 <button  onclick="trans();">切换图片</button>
 </body>

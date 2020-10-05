@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+
+</head>
+<body>
+<img src="img/1.jpg" title="wallpaper"   id="img1" style="cursor:pointer;width: 500px;height: 300px;">
+</body>
+<script type="text/javascript">
+    var fun=function () {
+        debugger;
+        var img1=document.getElementById("img1");
+        var temp=Math.ceil(Math.random()*4+1);
+        img1.src="img/"+temp+".jpg";
+    }
+    document.getElementById("img1").onclick=fun;
+    //定时器
+    self.setInterval("fun();",5000);//每1000ms执行一次指定的方法
+
+
+</script>
+</html>
