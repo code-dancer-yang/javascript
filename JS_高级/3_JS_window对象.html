@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Window</title>
+
+</head>
+<body>
+<button id="btn-open" title="打开">打开窗口</button>
+<button id="btn-close" title="关闭">关闭窗口</button>
+<h1 id="time-shower"></h1>
+</body>
+<script type="text/javascript">
+    /**
+     * Window:窗口对象
+     * 1.创建：可以直接使用 window对象
+     * 2.方法：
+     *  2.1 与弹出有关的方法
+     *      alert()显示一段提示信息并带有确认按钮的警告框
+     *      confirm() 显示带有一段提示信息并带有确认和取消按钮的对话框
+     *              *如果用户点击确定按钮则方法返回true,如果点击取消则返回false
+     *      prompt()显示可提示用户输入信息的对话框
+     *  2.2 打开关闭窗口
+     *      open() 返回打开的窗口对象
+     *      close()关闭窗口，谁调用关闭谁
+     *  2.3 与定时器相关的方法
+     *      setTimeout() 一次性定时器（只执行一次）
+     *          参数1：js代码片段或者方法对象
+     *          参数2：毫秒值
+     *      clearTimeout() 取消定时器
+     *          参数：取消指定id的一次性定时器
+     *     setInterval() 循环定时器
+     *          参数1：js代码片段或者方法对象
+     *          参数2：毫秒值
+     *     clearInterval() 取消定时器
+     *          参数：取消指定id的循环定时器
+     *
+     *
+     * 3.属性
+     *  3.1 获取其他BOM对象
+     *  history location Navigator Screen
+     *  3.2 获取DOM对象
+     *    document
+     * 4.特点
+     *  Window对象不需要创建可以直接使用，通过 window使用  例：window.方法名（）
+     *  window可以省略，例子 方法名（）
+     *
+     */
+    // window.alert("heihei");
+    // var confirm=confirm("您确认要退出么？");
+    // document.write("confirm()方法的返回值是："+confirm+"<br>");
+    // if(!confirm){
+    //     //退出操作
+    //     alert("欢迎再次光临！");
+    // }else {
+    //    //进入操作
+    //     alert("手别抖...");
+    // }
+    //输入框
+    // var result=window.prompt("用户名：","请输入用户名");
+    // document.write(result+"<br>");
+    //点击按钮，打开窗口
+    // var a=null;
+    // document.getElementById("btn-open").onclick=function (){
+    //    a= window.open("https://www.baidu.com","_blank");// _self在本窗口打开 _blank 打开一个新窗口
+    // }
+    // document.getElementById("btn-close").onclick=function () {
+    //     if (a==null)
+    //         window.close();
+    //     else
+    //         a.close();
+    // }
+
+    // var boom=function (){
+    //     alert("boom!!!!!!!!!!!");
+    // }
+    // window.setTimeout(boom,3000);
+    // window.setTimeout("boom();",3000);
+    // var dateTemp=new Date();
+    // var timeShower=document.getElementById("time-shower");
+    // timeShower.innerText="当前系统时间："+dateTemp.toLocaleString();
+    // var time=function (){
+    //     var date=new Date();
+    //     timeShower.innerText="当前系统时间："+date.toLocaleString();
+    // }
+    // var time_id=window.setInterval(time,1000);
+    // clearInterval(time_id);//销毁指定id的循环定时器
+    //获取当前页面的历史记录
+    // var h1=window.history;
+    // var h2=history;
+    // document.write(h1+"<br>")
+    // document.write(h2+"<br>");
+
+    var close_btn=window.document.getElementById("btn-close");
+    var close_btn2=document.getElementById("btn-close");
+    window.alert(close_btn);
+    window.alert(close_btn2);
+</script>
+</html>

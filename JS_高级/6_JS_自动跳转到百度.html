@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5秒钟自动跳转到百度</title>
+</head>
+<body>
+<div style="margin: auto;width: 80%;align-items: center;justify-content: center" >
+<span id="time" style="color: red;font-size: 20px">5</span>秒钟后，自动跳转到百度...
+</div>
+<script type="text/javascript">
+
+   var timeTask=function (){
+       //获取span元素
+       var span= document.getElementById("time");
+       var temp=span.innerText
+       span.innerText=temp-1;
+       if(temp==1){
+           window.clearInterval(time_id);
+           window.location.href="https://www.baidu.com";
+
+
+       }
+   }
+   var time_id=window.setInterval(timeTask,1000);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图片</title>
+</head>
+<body>
+<div style="display: flex;justify-content: center;align-items: center;">
+<img id="img-loop" title="轮播图" src="img/1.jpg" style="width: 50%;"/>
+</div>
+<script type="text/javascript">
+    // 1.获取img元素
+    var img=document.getElementById("img-loop");
+    var index=1;
+    //2.定时器任务
+    var timeTask=function (){
+        //获取src属性并设置值
+        index++;
+        if(index>5) {
+            index = 1;
+        }
+        img.src="img/"+index+".jpg";
+
+    }
+    //设置循环定时器 ，没三秒切换一次
+    window.setInterval(timeTask,2000);
+</script>
+</body>
+
+</html>
