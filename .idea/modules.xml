@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/day01_javascript基础/day01_javascript基础.iml" filepath="$PROJECT_DIR$/day01_javascript基础/day01_javascript基础.iml" />
       <module fileurl="file://$PROJECT_DIR$/javascript_基础/javascript_基础.iml" filepath="$PROJECT_DIR$/javascript_基础/javascript_基础.iml" />
       <module fileurl="file://$PROJECT_DIR$/javascript_高级.iml" filepath="$PROJECT_DIR$/javascript_高级.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vue_基础/vue_基础.iml" filepath="$PROJECT_DIR$/vue_基础/vue_基础.iml" />
     </modules>
   </component>
 </project>

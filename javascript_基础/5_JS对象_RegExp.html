@@ -25,7 +25,6 @@
     var username="zhangsanfdgsdfgfdg";
     var flag=reg2.test(username);
     // alert(flag);
-
     function check(){
         debugger;
         var phone=document.getElementById("phone").value;
@@ -48,7 +47,7 @@
         }
     }
     var jump=function (arg1){
-        alert("我要跳转到百度首页啦！")
+        alert("我要跳转到百度首页啦！");
         return false;//在此处返回false 不能阻止a标签 href的执行
         //必须在onclick中设置 return false才能生效
     }
@@ -58,7 +57,8 @@
 <input type="number" id="phone" name="phone"><br>
 <input type="button" id="check" onclick="check2('333');" value="验证手机号码"><br>
 <a href="javascript:void(0)" onclick="check();">点击我验证手机号是否合法</a><br>
-<a href="http://www.baidu.com" target="_top" title="haha" style="cursor:pointer" onclick="jump();return false">点击我跳转到百度</a>
+<a href="http://www.baidu.com" target="_top" title="haha" style="cursor:pointer" onclick="jump();return false;">点击我跳转到百度</a>
+<a href="http://www.baidu.com" target="_top" title="haha" style="cursor:pointer" onclick="return jump();">点击我跳转到百度</a>
 
 
 </body>
